@@ -11,8 +11,8 @@
 #define MYTIMER_H_
 
 void initTimer(unsigned int timer, unsigned int preScaler, unsigned int count);
-bool timer0Expired(void);
-bool timer1Expired(void);
+bool timer0Expired();
+bool timer1Expired();
 
 // These are easy-to-use aliases for the arguments used by the timer configuration and use functions.
 #define TIMER0              TIMER32_0_BASE
@@ -26,8 +26,8 @@ bool timer1Expired(void);
 #define MAX_VALUE           0xFFFFFFFF
 
 // TODO: Determine values to represent the timer count values for one second (Timer0) and one millisecond (Timer1)
-#define TIMER0_COUNT        8
-#define TIMER1_COUNT        8
+#define TIMER0_COUNT        3600000
+#define TIMER1_COUNT        3600
 
 // TODO: Define any constants that are local to myTimer.c using #define
 
